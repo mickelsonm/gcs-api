@@ -20,6 +20,7 @@ func main() {
 
 	//gets all clients
 	router.HandleFunc("/clients", func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Add("Access-Control-Allow-Origin", "*")
 		clients, err := client.GetAllClients()
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
@@ -30,6 +31,7 @@ func main() {
 
 	//gets a specific client by the id
 	router.HandleFunc("/clients/{id:[0-9]+}", func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Add("Access-Control-Allow-Origin", "*")
 		vars := mux.Vars(r)
 		id := vars["id"]
 		cl, err := client.GetClientByID(id)
