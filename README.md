@@ -1,5 +1,5 @@
 # gcs-api
-This is a test API for GCS. It serves as an example of how an API can retrieve
+This is a toy API for GCS. It serves as an example of how an API can retrieve
 information from a database and serve it back in a useable JSON format.
 
 # How to build?
@@ -26,3 +26,7 @@ First you need to build the image:
 Once that has been done we can run it:
 
   docker run -d -p 8080:8080 gcsapi gcsapi
+
+# Licensing
+
+MIT.
