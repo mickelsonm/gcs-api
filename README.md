@@ -15,18 +15,18 @@ the database helper.
 
 Once you have all the dependencies that you need, then it should be just a:
 
-  go run main.go
+    go run main.go
 
 # How to run with Docker?
 
 First you need to build the image:
 
-  docker build -t gcsapi .
+    docker build -t gcsapi .
 
 Once that has been done we can run it:
 
-  docker run -d -p 8080:8080 gcsapi gcsapi
+    docker run -d -p 8080:8080 gcsapi gcsapi
 
 # Licensing
 
-MIT.
+  MIT.
