@@ -2,6 +2,7 @@
 *.o
 *.a
 *.so
+gcsapi
 
 # Folders
 _obj
